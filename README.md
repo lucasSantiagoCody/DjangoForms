@@ -107,10 +107,11 @@ Django ORM (Object-Relational Mapping) is a system that allows developers to int
 
 ### CSRF token
 <p style='margin-left:20px'>
-Imagine that you are authenticated on a banking website and, at the same time, you visit a malicious website. The malicious website may attempt to send a request in your name to the banking website, such as a money transfer. As you are already authenticated, the banking website will process the request as if it were legitimate, resulting in unwanted actions. This is  **CSRF (Cross-Site Request Forgery)**
+Imagine that you are authenticated on a banking website and, at the same time, you visit a malicious website. The malicious website may attempt to send a request in your name to the banking website, such as a money transfer. As you are already authenticated, the banking website will process the request as if it were legitimate, resulting in unwanted actions. This is CSRF (Cross-Site Request Forgery).
+
 </p>
 
-### regression
+### Regression
 <p style='margin-left:20px'>
 A regression is a situation where a new change to the software results in loss of functionality or bugs in parts of the system that were previously working correctly.
 </p>
