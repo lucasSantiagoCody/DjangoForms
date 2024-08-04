@@ -8,3 +8,8 @@ class SignUpModelForm(forms.ModelForm):
         model = User
         fields = ['username', 'email', 'password']
 
+
+class LoginModelForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['username', 'password']
