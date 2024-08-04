@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from .forms import LoginModelForm
 
+def login_view_model_form(request):
+    context = {}
+    context['form'] = LoginModelForm
+    return render(request, 'login.html', context)
 
-def login_view(request):
-    return render(request, 'login.html')
