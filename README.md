@@ -19,6 +19,7 @@
     <li>Data Validation</li>
     <li>Error Management</li>
     <li>Rendering</li>
+    <li>Widgets</li>
     <li>Security</li>
 </ul>
 
