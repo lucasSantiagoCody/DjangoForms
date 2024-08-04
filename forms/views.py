@@ -6,5 +6,4 @@ from .forms import LoginModelForm
 def login_view_model_form(request):
     context = {}
     context['form'] = LoginModelForm
-    return render(request, 'login.html', context)
-
+    return render(request, 'login_model_form.html', context)
