@@ -21,14 +21,3 @@ class SignUpWidgetForm(forms.Form):
     email = forms.EmailField(widget=forms.EmailInput)
     password = forms.CharField(widget=forms.PasswordInput)
 
-
-class LoginModelForm(ModelForm):
-    class Meta:
-        model = User
-        fields = ['username', 'password']
-
-
-class LoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField()
-
