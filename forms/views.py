@@ -2,8 +2,7 @@ from .forms import (
     SignUpModelForm, 
     SignUpForm,
     SignUpWidgetForm,
-    LoginModelForm, 
-    LoginForm
+   
     )
 from django.shortcuts import render
 
@@ -25,3 +24,4 @@ def signup_view_widget_form(request):
     context = {}
     context['form'] = SignUpWidgetForm
     return render(request, 'signup_widget_form.html', context)
+
