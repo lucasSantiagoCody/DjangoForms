@@ -8,12 +8,6 @@ from .forms import (
 from django.shortcuts import render
 
 
-# login view for LoginModelForm
-def login_view_model_form(request):
-    context = {}
-    context['form'] = LoginModelForm
-    return render(request, 'login_model_form.html', context)
-
 
 def signup_view_model_form(request):
     context = {}
@@ -31,10 +25,3 @@ def signup_view_widget_form(request):
     context = {}
     context['form'] = SignUpWidgetForm
     return render(request, 'signup_widget_form.html', context)
-
-
-def login_view_form(request):
-    context = {}
-    context['form'] = LoginForm
-    return render(request, 'signup_form.html', context)
-
