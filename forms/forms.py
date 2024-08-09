@@ -16,6 +16,12 @@ class SignUpForm(forms.Form):
     password = forms.CharField()
 
 
+class SignUpWidgetForm(forms.Form):
+    username = forms.CharField(widget=forms.TextInput)
+    email = forms.EmailField(widget=forms.EmailInput)
+    password = forms.CharField(widget=forms.PasswordInput)
+
+
 class LoginModelForm(ModelForm):
     class Meta:
         model = User
@@ -25,3 +31,4 @@ class LoginModelForm(ModelForm):
 class LoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField()
+
