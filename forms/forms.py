@@ -21,3 +21,7 @@ class LoginModelForm(ModelForm):
         model = User
         fields = ['username', 'password']
 
+
+class LoginForm(forms.Form):
+    username = forms.CharField()
+    password = forms.CharField()
