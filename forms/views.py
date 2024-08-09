@@ -1,7 +1,8 @@
 from .forms import (
     SignUpModelForm, 
-    LoginModelForm, 
     SignUpForm,
+    SignUpWidgetForm,
+    LoginModelForm, 
     LoginForm
     )
 from django.shortcuts import render
@@ -25,7 +26,15 @@ def signup_view_form(request):
     context['form'] = SignUpForm
     return render(request, 'signup_form.html', context)
 
+
+def signup_view_widget_form(request):
+    context = {}
+    context['form'] = SignUpWidgetForm
+    return render(request, 'signup_widget_form.html', context)
+
+
 def login_view_form(request):
     context = {}
     context['form'] = LoginForm
     return render(request, 'signup_form.html', context)
+
